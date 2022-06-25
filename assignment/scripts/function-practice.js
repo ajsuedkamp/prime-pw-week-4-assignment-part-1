@@ -85,9 +85,23 @@ console.log(getLast(exapmpleArray1));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
+let array7 = ['Vikings', 'Packers', 'Bears', 'Lions'];
+function find( value, array ) {
+  for (let i = 0; i < array.length; i++) {
+  if ( value === array[i]) {
+    return true;
   
+  }
+ }
+return false;
 }
+console.log(find('monkeys', array7));
+console.log(find('Lions', array7));
+console.log(find('Vikings', array7));
+console.log(find('tigers', array7));
+console.log(find('Packers', array7));
+
+
 
 // ----------------------
 // Stretch Goals
