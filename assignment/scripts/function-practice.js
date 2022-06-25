@@ -122,11 +122,20 @@ console.log(isFirstLetter('c', 'dog'));
 
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
+let someNumbers = [1, 3, 5, 7];
+let someOtherNumbers = [2, 4, 6, 8];
+function sumAll(arrayOfNumbers) {
   let sum = 0
   // TODO: loop to add items
+  for(let i = 0; i < arrayOfNumbers.length; i++ ) {
+    sum += arrayOfNumbers[i];
+  }
+
   return sum;
 }
+console.log(sumAll(someNumbers));
+console.log(sumAll(someOtherNumbers));
+
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
