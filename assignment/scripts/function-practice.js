@@ -142,23 +142,27 @@ console.log(sumAll(someOtherNumbers));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-let exampleNumbers = [2, -3, 4, -5];
+let exampleNumbers1 = [2, -3, 4, -5];
 let exampleNumbers2 = [-7, -9];
-let allPositive = [];
+let exampleNumbers3 = [12, 14, 16, 18, -20];
+let exampleNumbers4 = [0];
 
-function positiveNumbers (someArray) {
-  
+function positiveNumbers(someArray) {
+  let allPositive = [];
+
   for(let i = 0; i < someArray.length; i++) {
-    let number = someArray[i];
-    if (number > 0) {
+  let number = someArray[i];
+  if (number > 0) {
     allPositive.push(number);
     } 
   }
+  
   return allPositive;
-
 }
-console.log(positiveNumbers(exampleNumbers));
 console.log(positiveNumbers(exampleNumbers2));
+console.log(positiveNumbers(exampleNumbers1));
+console.log(positiveNumbers(exampleNumbers3));
+
 
 
 
@@ -166,3 +170,6 @@ console.log(positiveNumbers(exampleNumbers2));
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+// You are counting points for a basketball game, give the amount of 2-pointers
+// and 3-pointers scored, find the final points for the team and return the value.
