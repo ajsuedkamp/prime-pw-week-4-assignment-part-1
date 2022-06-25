@@ -159,9 +159,12 @@ function positiveNumbers(someArray) {
   
   return allPositive;
 }
-console.log(positiveNumbers(exampleNumbers2));
-console.log(positiveNumbers(exampleNumbers1));
-console.log(positiveNumbers(exampleNumbers3));
+console.log('Input array:', exampleNumbers2);
+console.log('Positive number Output array:', positiveNumbers(exampleNumbers2));
+console.log('Input array:', exampleNumbers1)
+console.log('Positive number Output array:', positiveNumbers(exampleNumbers1));
+console.log('Input array:', exampleNumbers3);
+console.log('Positive number Output array:',positiveNumbers(exampleNumbers3));
 
 
 
