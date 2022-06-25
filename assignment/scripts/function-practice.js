@@ -176,3 +176,9 @@ console.log('Positive number Output array:',positiveNumbers(exampleNumbers3));
 
 // You are counting points for a basketball game, give the amount of 2-pointers
 // and 3-pointers scored, find the final points for the team and return the value.
+
+function points (twoPointer, threePointer) {
+totalPoints = (twoPointer * 2) + (threePointer * 3);
+return totalPoints;
+}
+console.log('The team scored', points(35, 10), 'points!');
